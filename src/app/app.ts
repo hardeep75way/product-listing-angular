@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { HelloComponent } from './hello/hello';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ProductListComponent } from './components/product-list/product-list';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HelloComponent],
+  imports: [FormsModule, CommonModule, ProductListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
